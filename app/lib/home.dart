@@ -1,6 +1,7 @@
 import 'package:app/dtls.dart';
 import 'package:app/login.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomePage extends StatefulWidget {
@@ -113,7 +114,10 @@ class _HomePageState extends State<HomePage> {
                             ),
                           );
                         },
-                        title: Text(dtls[index] ?? "Unknown"),
+                        title: Text(
+                          dtls[index] ?? "Unknown",
+                          style: GoogleFonts.acme(color: Colors.black),
+                        ),
                         subtitle: Text("Age 1${index}"),
                         leading:
                             index % 2 == 0
